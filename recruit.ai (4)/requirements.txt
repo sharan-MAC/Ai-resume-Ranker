@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+sqlalchemy
+google-generativeai
+imap-tools
+python-multipart
+pypdf
+python-docx
+python-dotenv
+mail-parser
+mammoth
+jinja2
+pinecone-client
+numpy
+websockets
