@@ -1,210 +1,158 @@
-# Recruit.AI---Intelligent-Recruitment-Dashboard
-A professional, AI-powered recruitment tool for automated resume ingestion, extraction, and candidate ranking.
-Overview
+# 🚀 Recruit.AI — Intelligent Recruitment Dashboard
 
-This project is an end-to-end AI-powered recruitment automation platform that ingests resumes from email, extracts structured candidate information using Google Gemini AI, and ranks applicants against job descriptions. It provides a clean and responsive dashboard for efficient candidate evaluation.
+<div align="center">
 
-Features
-Automated Resume Ingestion
+![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green?style=for-the-badge&logo=fastapi)
+![SQLite](https://img.shields.io/badge/SQLite-Database-lightblue?style=for-the-badge&logo=sqlite)
+![Gemini AI](https://img.shields.io/badge/Google-Gemini_AI-orange?style=for-the-badge&logo=google)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-Frontend-cyan?style=for-the-badge&logo=tailwind-css)
+![License](https://img.shields.io/badge/License-MIT-red?style=for-the-badge)
 
-Monitors email inbox using IMAP
+### 💼 Professional AI-Powered Recruitment Automation Platform
 
-Fetches unread resumes automatically
+### Resume Ingestion • AI Extraction • Candidate Ranking • Smart Dashboard
 
-Supports PDF and DOCX formats
+</div>
 
-AI-Based Resume Parsing
+---
 
-Uses Google Gemini AI for information extraction
+# 📌 Overview
 
-Extracts:
+**Recruit.AI** is a complete end-to-end AI-powered recruitment automation system designed to simplify and accelerate the hiring process.
 
-Skills
+The platform automatically fetches resumes from email inboxes, extracts structured candidate information using **Google Gemini AI**, compares applicants against job descriptions, and ranks candidates based on relevance.
 
-Work experience
+It provides recruiters and HR teams with a clean, responsive, and professional dashboard for faster and smarter hiring decisions.
 
-Education
+---
 
-Projects (if available)
+# ✨ Key Features
 
-Handles unstructured resume data
+## 📥 1. Automated Resume Ingestion
 
-Candidate Ranking System
+### Supports:
 
-Matches candidate profiles with job descriptions
+- ✔ Email Inbox Monitoring using IMAP  
+- ✔ Automatic Fetching of Unread Resumes  
+- ✔ PDF Resume Support  
+- ✔ DOCX Resume Support  
+- ✔ Zero Manual Resume Upload  
 
-Generates AI-based relevance scores
+---
 
-Ranks candidates automatically
+## 🤖 2. AI-Based Resume Parsing
 
-Dashboard Interface
+Powered by **Google Gemini AI**
 
-Clean and responsive UI
+### Extracted Information:
 
-Displays candidate insights and rankings
+- ✔ Skills  
+- ✔ Work Experience  
+- ✔ Education  
+- ✔ Projects  
+- ✔ Certifications  
+- ✔ Candidate Summary  
 
-Smooth interactions using lightweight frontend tools
+### Smart Parsing:
 
-Tech Stack
-Backend
+Handles both:
 
-Python 3.x
+- Structured resumes  
+- Unstructured resumes  
 
-FastAPI
+with high efficiency and accuracy.
 
-Jinja2 Templates
+---
 
-Frontend
+## 🏆 3. Candidate Ranking System
 
-Tailwind CSS (CDN)
+### Features:
 
-Alpine.js (CDN)
+- ✔ JD Matching  
+- ✔ AI-Based Relevance Scoring  
+- ✔ Automatic Candidate Ranking  
+- ✔ Top Applicant Identification  
 
-Database
+### Benefits:
 
-SQLite
+- Reduces screening effort  
+- Improves hiring speed  
+- Helps shortlist better candidates  
 
-AI Integration
+---
 
-Google Gemini AI (Python SDK)
+## 📊 4. Professional Dashboard Interface
 
-Email Integration
+### Includes:
 
-imap-tools
+- ✔ Clean UI  
+- ✔ Fully Responsive Design  
+- ✔ Lightweight Frontend  
+- ✔ Fast Performance  
+- ✔ Candidate Insights  
+- ✔ Ranking Visualization  
 
-File Processing
+Built for recruiters to work faster with better visibility.
 
-pypdf (PDF parsing)
+---
 
-mammoth (DOCX parsing)
+# 🛠 Tech Stack
 
-Icons
+## Backend
 
-Lucide Icons
+- Python 3.x  
+- FastAPI  
+- Jinja2 Templates  
 
-Project Structure
-├── main.py                # FastAPI application entry point
+## Frontend
+
+- Tailwind CSS (CDN)  
+- Alpine.js (CDN)  
+
+## Database
+
+- SQLite  
+
+## AI Integration
+
+- Google Gemini AI (Python SDK)  
+
+## Email Integration
+
+- imap-tools  
+
+## File Processing
+
+- pypdf (PDF parsing)  
+- mammoth (DOCX parsing)  
+
+## Icons
+
+- Lucide Icons  
+
+---
+
+# 📁 Project Structure
+
+```bash
+Recruit.AI/
+│
+├── main.py
+│   # FastAPI application entry point
+│
 ├── templates/
-│   └── index.html        # Frontend UI
-├── recruitment.db        # SQLite database
-├── requirements.txt      # Python dependencies
-├── .env.example          # Environment variables template
-└── README.md             # Documentation
-Getting Started (Local Development)
-1. Clone the Repository
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-2. Install Dependencies
-pip install -r requirements.txt
-3. Configure Environment Variables
-
-Create a .env file:
-
-GEMINI_API_KEY=your_api_key
-
-EMAIL_USER=your_email@gmail.com
-EMAIL_PASS=your_gmail_app_password
-
-EMAIL_HOST=imap.gmail.com
-EMAIL_PORT=993
-
-SMTP_HOST=smtp.gmail.com
-SMTP_PORT=587
-
-HR_EMAIL=hr@company.com
-
-DATABASE_URL=sqlite:///./recruitment.db
-
-Note:
-
-Use a Gmail App Password instead of your actual password.
-
-4. Run the Application
-python3 main.py
-5. Access the Application
-
-Open the following URL in your browser:
-
-http://localhost:3000
-Deployment (Render)
-Steps
-
-Create a new Web Service on Render
-
-Connect your GitHub repository
-
-Select Python environment
-
-Build Command
-pip install -r requirements.txt
-Start Command
-uvicorn main:app --host 0.0.0.0 --port $PORT
-Required Environment Variables
-
-GEMINI_API_KEY
-
-EMAIL_USER
-
-EMAIL_PASS
-
-EMAIL_HOST=imap.gmail.com
-
-EMAIL_PORT=993
-
-SMTP_HOST=smtp.gmail.com
-
-SMTP_PORT=587
-
-HR_EMAIL
-
-DATABASE_URL=sqlite:///./recruitment.db
-
-System Workflow
-
-The system monitors the email inbox
-
-New resumes are downloaded automatically
-
-Gemini AI extracts structured information
-
-Candidate data is matched with job descriptions
-
-Candidates are ranked based on relevance
-
-Results are displayed in the dashboard
-
-Security Considerations
-
-Use environment variables to store sensitive data
-
-Do not commit .env files to version control
-
-Use app-specific passwords for email authentication
-
-Enable HTTPS in production deployments
-
-Future Enhancements
-
-Advanced filtering and search capabilities
-
-Explainable AI for scoring transparency
-
-Automated candidate email responses
-
-Multi-user authentication system
-
-Analytics dashboard for HR insights
-
-Contributing
-
-Fork the repository
-
-Create a new branch
-
-Commit your changes
-
-Submit a pull request
-
-License
-
-This project is licensed under the MIT License.
+│   └── index.html
+│       # Frontend dashboard UI
+│
+├── recruitment.db
+│   # SQLite database
+│
+├── requirements.txt
+│   # Python dependencies
+│
+├── .env.example
+│   # Environment variables template
+│
+└── README.md
+    # Project documentation
